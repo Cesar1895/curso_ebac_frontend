@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Modulo 13</title>
+    <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+        .nav-link {
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        section {
+            padding: 10vh;
+        }
+
+        section #inicio {
+            height: 100vh;
+            padding-top: 60px;
+        }
+
+        header h1 {
+            font-weight: bold;
+        }
+
+        header {
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+
+        #inicio {
+            padding: 10px;
+        }
+
+        .d-block {
+            height: 90vh;
+        }
+
+
+        .post {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1> GAMES.COM</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#consoles">Consoles</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        
+    <section id="inicio">
+        <div class="container">
+            <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="2000" class="carousel-item active">
+                        <img class="img-fluid w-100" src="midias/Spider-Man-2.jpg" alt="">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img class="img-fluid w-100" src="midias/resident-evil-4-remake.jpg" alt="">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img class="img-fluid w-100" src="midias/EAFC24.jpg" alt="">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+        
+                <button data-bs-slide="prev" data-bs-target="#carousel" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+        
+                <button data-bs-slide="next" data-bs-target="#carousel" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+        
+                <div class="carousel-indicators">
+                    <button class="active" data-bs-target="#carousel" type="button" data-bs-slide-to="0"></button>
+                    <button data-bs-target="#carousel" type="button" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#carousel" type="button" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section id="produtos">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-8">
+                <h2>Produtos</h2>
+                <div class="container g-0">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 post">
+                            <div id="acessorios">
+                                <img src="https://via.placeholder.com/200x200" >
+                                <h4>Acessorios</h4>
+                                <a class="btn btn-primary btn-sm">Veja mais</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 post">
+                            <img src="https://via.placeholder.com/200x200">
+                            <h4>Eletronicos</h4>
+                            <a class="btn btn-primary btn-sm">Veja mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex justify-content-end">
+                <div>
+                    <h2>Patrocinadores</h2>
+                <img src="https://via.placeholder.com/200x200">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="consoles">
+    <div class="container">
+        <h2>Consoles</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Playstation 4</h4>
+                    </div>
+                    <img src="midias/Ps4.jpg">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, suscipit recusandae! Aliquam, a dolore quod pariatur minus quo. Minima corrupti quasi at autem distinctio harum consequatur itaque tenetur aliquam fuga?</p>
+                        <a class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Playstation 5 </h4>
+                    </div>
+                    <img src="midias/ps5.jpg">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, suscipit recusandae! Aliquam, a dolore quod pariatur minus quo. Minima corrupti quasi at autem distinctio harum consequatur itaque tenetur aliquam fuga?</p>
+                        <a class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>X-BOX Series X</h4>
+                    </div>
+                    <img src="midias/xbox.jpg">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, suscipit recusandae! Aliquam, a dolore quod pariatur minus quo. Minima corrupti quasi at autem distinctio harum consequatur itaque tenetur aliquam fuga?</p>
+                        <a class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
